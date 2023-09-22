@@ -6,7 +6,7 @@ export default function Home() {
     <div className="App">
         <div className='pagina-home'>
       <div className='container'>
-        <h1> AgendaON</h1>
+        <h1> Feira de Profissões</h1>
         <nav>
           <Link to='/listar'> Consultar </Link>
           <Link to='/inserir'> Inserir </Link>

@@ -5,20 +5,18 @@ import axios from 'axios';
 
 
 export default function Inserir() {
-  const [nome, setNome] = useState('');
-  const [telefone, setTelefone] = useState('');
-  const [email, setEmail] = useState('');
-  const [cadastro, setCadastro] = useState('');
-  const [favorito, setFavorito] = useState(false);
+  const [nome, setNome] = useState(''); 
+  const [idade, setIdade] = useState('');
+  const [nota, setNota] = useState('');
+  const [preferencia, setPreferencia] = useState('');
 
 
   async function salvarContato() {
     let contato = {
       nome: nome,
-      telefone: telefone,
-      email: email,
-      favorito: favorito,
-      cadastro: cadastro
+      idade: idade,
+      nota: nota,
+      preferencia: preferencia
     }
 
 
@@ -38,23 +36,18 @@ export default function Inserir() {
             <input type='text' value={nome} onChange={e => setNome(e.target.value)} />
           </div>
           <div>
-            <label>Telefone: </label>
-            <input type='text' value={telefone} onChange={e => setTelefone(e.target.value)} />
+            <label>Idade: </label>
+            <input type='text' value={idade} onChange={e => setIdade(e.target.value)} />
           </div>
           <div>
-            <label>E-mail: </label>
-            <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
+            <label>Nota da Feira: </label>
+            <input type='text' value={nota} onChange={e => setNota(e.target.value)} />
           </div>
           <div>
-            <label>Cadastro: </label>
-            <input type='date'  value={cadastro} onChange={e => setCadastro(e.target.value)} />
+            <label>Preferência de curso: </label>
+            <input type='text'  value={preferencia} onChange={e => setPreferencia(e.target.value)} />
           </div>
-          <div>
-            <label>Favorito: </label>
-            <div>
-              <input type='checkbox'  value={favorito} onChange={e => setFavorito(e.target.checked)} /> Sim
-            </div>
-          </div>
+    
           <div className='right'>
             <button onClick={salvarContato}> Salvar </button>
           </div>

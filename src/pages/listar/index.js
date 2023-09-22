@@ -28,10 +28,9 @@ export default function Listar() {
             <tr>
               <th>#ID</th>
               <th>Nome</th>
-              <th>Telefone</th>
-              <th>E-mail</th>
-              <th>Favorito</th>
-              <th>Cadastro</th>
+              <th>Idade</th>
+              <th>Nota da feira</th>
+              <th>Preferência de curso</th>
             </tr>
           </thead>
           <tbody>
